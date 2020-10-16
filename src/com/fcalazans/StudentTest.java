@@ -18,13 +18,13 @@ public class StudentTest {
         Student[] students = new Student[10];
         Student student1 = new Student("Fabio", 1979);
         System.out.println(student1.getName());
-        // student1.addQuizScore(2);
-        // student1.addQuizScore(4);
-        // student1.addQuizScore(3);
-        // student1.addQuizScore(3);
-        // student1.addQuizScore(3);
-        // student1.addQuizScore(3);
-        // System.out.println("Total score is: " + student1.getTotalScore());
-        // System.out.println("Average is: " + student1.getAverageScore());
+        student1.addQuizScore(2);
+        student1.addQuizScore(4);
+        student1.addQuizScore(3);
+        student1.addQuizScore(3);
+        student1.addQuizScore(3);
+        student1.addQuizScore(3);
+        System.out.println("Total score is: " + student1.getTotalScore());
+        System.out.println("Average is: " + student1.getAverageScore());
     }
 }

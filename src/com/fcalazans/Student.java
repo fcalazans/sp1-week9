@@ -12,7 +12,7 @@ public class Student {
     
     private int year;
     
-    // private int totalScore;
+    private int totalScore;
     
     public String getName() {
         return name;
@@ -32,8 +32,8 @@ public class Student {
     }
     
     
-    // private int scoreCount;
-    // private double average;
+    private int scoreCount;
+    private double average;
     
     
     //Loop:
@@ -46,19 +46,19 @@ public class Student {
     // s.getName(i)
     
     
-    // public void addQuizScore(int score) {
-    //     scoreCount++;
-    //     totalScore += score;
-    // }
+    public void addQuizScore(int score) {
+        scoreCount++;
+        totalScore += score;
+    }
     
     
-    // public double getAverageScore() {
-    //     if (scoreCount > 0) {
-    //         average = totalScore / scoreCount;
-    //         return average;
-    //     }
-    //     return average;
-    // }
+    public double getAverageScore() {
+        if (scoreCount > 0) {
+            average = totalScore / scoreCount;
+            return average;
+        }
+        return average;
+    }
     //
     // public Student(String firstName, String lastName) {
     //     //     this.firstName = firstName;
@@ -73,4 +73,11 @@ public class Student {
         // scoreCount = 0;
         
     }
+    
+    public int getTotalScore() {
+        return totalScore;
+    
+    }
+    
+  
 }

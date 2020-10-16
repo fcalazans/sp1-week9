@@ -3,6 +3,10 @@ package com.fcalazans;
 public class Student {
     private String name;
     private String programme;
+    private int year;
+    private int totalScore;
+    private int scoreCount;
+    private double average;
     
     public Student(String name, String programme, int year) {
         this.name = name;
@@ -10,9 +14,21 @@ public class Student {
         this.year = year;
     }
     
-    private int year;
+    //
+    // public Student(String firstName, String lastName) {
+    //     //     this.firstName = firstName;
+    //     //     this.lastName = lastName;
+    //     //     totalScore = 0;
+    //     //     scoreCount = 0;
+    //     //
+    //     // }
     
-    private int totalScore;
+    public Student(String name, int year) {
+        this.name = name;
+        // totalScore = 0;
+        // scoreCount = 0;
+        
+    }
     
     public String getName() {
         return name;
@@ -27,15 +43,6 @@ public class Student {
     }
     
     
-    public int getYear() {
-        return year;
-    }
-    
-    
-    private int scoreCount;
-    private double average;
-    
-    
     //Loop:
     // students[0] = new Student();
     // read in name, year of bird, programme
@@ -45,12 +52,14 @@ public class Student {
     // s.getProgramme().equals("BSc ISM")
     // s.getName(i)
     
+    public int getYear() {
+        return year;
+    }
     
     public void addQuizScore(int score) {
         scoreCount++;
         totalScore += score;
     }
-    
     
     public double getAverageScore() {
         if (scoreCount > 0) {
@@ -59,25 +68,8 @@ public class Student {
         }
         return average;
     }
-    //
-    // public Student(String firstName, String lastName) {
-    //     //     this.firstName = firstName;
-    //     //     this.lastName = lastName;
-    //     //     totalScore = 0;
-    //     //     scoreCount = 0;
-    //     //
-    //     // }
-    public Student(String name, int year) {
-        this.name = name;
-        // totalScore = 0;
-        // scoreCount = 0;
-        
-    }
     
     public int getTotalScore() {
         return totalScore;
-    
     }
-    
-  
 }
